@@ -1,0 +1,45 @@
+h1 {
+  text-decoration: underline;
+}
+/* Task 1 */
+code {
+  background-color: #ffefd6;
+  padding: 3px;
+  display: block;
+}
+
+section {
+  background-color: #ffd79b;
+  padding: 0.5rem 1rem;
+  margin: 1px;
+  display: inline-block;
+}
+span * {
+  color: blue;
+}
+/* Task 2 */
+
+/* don't change .box */
+.box {
+  height: 300px;
+  width: 300px;
+  margin: 30px;
+  padding: 10px;
+  background: yellow;
+  border: 10px solid black;
+}
+
+.border {
+  box-sizing: border-box;
+  /* change height + width here! */
+  height: 340px;
+  width: 340px;
+  margin: 30px;
+  padding: 10px;
+  border: 10px;
+}
+
+/* don't change .content */
+.content {
+  box-sizing: content-box;
+}

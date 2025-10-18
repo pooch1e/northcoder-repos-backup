@@ -1,0 +1,32 @@
+{
+  "name": "be-pets-and-owners",
+  "version": "1.0.0",
+  "description": "To get your tasks head to:  https://l2c.northcoders.com/courses/be/pets-and-owners",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "seed-dev": "node db/seeding/run-seed.js",
+    "setup-dbs": "psql -f db/setup-dbs.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northcoders/be-pets-and-owners.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/northcoders/be-pets-and-owners/issues"
+  },
+  "homepage": "https://github.com/northcoders/be-pets-and-owners#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "pg": "^8.16.0",
+    "pg-format": "^1.0.4",
+    "supertest": "^7.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

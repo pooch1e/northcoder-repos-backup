@@ -1,0 +1,27 @@
+{
+  "name": "backend-template-seeding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pooch1e/backend-template-seeding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pooch1e/backend-template-seeding/issues"
+  },
+  "homepage": "https://github.com/pooch1e/backend-template-seeding#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

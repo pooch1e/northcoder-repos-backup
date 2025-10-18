@@ -1,0 +1,6 @@
+You are now connected to database "bookshop" as user "joelkram".
+ book_id |         title         
+---------+-----------------------
+       4 | The War of the Worlds
+(1 row)
+

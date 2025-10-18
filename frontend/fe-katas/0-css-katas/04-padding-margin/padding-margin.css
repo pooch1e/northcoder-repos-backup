@@ -1,0 +1,72 @@
+h1 {
+  text-decoration: underline;
+}
+
+section {
+  border: 1px solid #000000;
+  width: 200px;
+  background-color: rgb(250, 228, 215);
+  text-align: center;
+}
+
+section p {
+  background-color: rgb(255, 167, 108);
+  font-size: 30px;
+}
+
+.fragile,
+.left,
+.right,
+.spa {
+  border: 1px solid rgb(255, 188, 143);
+  padding: 0;
+}
+
+/* Change the CSS after this line */
+/* Task 1 */
+
+section * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Task 2 */
+
+.right,
+.left {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.right {
+  margin-right: auto;  
+  text-align: right;
+}
+
+.left {
+  margin-left: auto; 
+  text-align: left;
+}
+
+/* Task 3 */
+.spa {
+  width: 95vw;
+  margin-left: 50vw;
+}
+
+/* Task 4 */
+.avocado-article {
+  width: 300px;
+  border: 1px solid black;
+  padding: 2em;
+}
+
+.avocado-article > ul {
+  margin-left: -28px;
+}
+
+.button-wrapper {
+  width: max-content;
+  margin-left: 25%;
+  gap: 1em;
+}

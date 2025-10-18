@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Meme Generator</title>
+  </head>
+  <body>
+    <main>
+      <section id="image-section">
+        <div id="meme-image"></div>
+        <div id="top-text-div">
+          <h1 id="top-text">Meme Generator</h1>
+        </div>
+        <div id="bottom-text-div">
+          <p id="bottom-text">Example text</p>
+        </div>
+      </section>
+      <section id="form section">
+        <div id="how-to">
+          <h2>How to...</h2>
+          <p>Lorem ipsum.</p>
+        </div>
+        <form id="text-generation" action="success.html" method="GET">
+          <label for="first-name">First name</label>
+            <div class="input-container">
+            <input id="first-name" type="text" name="first-name" required />
+            <div class='icon' id="tick">
+            </div>
+          </div>
+          <p id="name-error" class="error-message"></p>
+          <label for="meme-title">Top text</label>
+          <input
+            id="top-text-form"
+            type="text"
+            name="top-text"
+            required
+            maxlength="50"
+          />
+          <p id="title-character-counter" class="character-counter"><span id="counter-1">0</span>/50</p>
+          <label for="meme-text">Bottom text</label>
+          <input
+            id="bottom-text-form"
+            type="text"
+            name="bottom-text"
+            required
+            maxlength="50"
+          />
+          <p id="text-character-counter" class="character-counter"><span id=counter-2>0</span>/50</p>
+          <label for="img">Select image:</label>
+          <input type="file" id="img" name="image" accept="image/*" />
+          <button id="submit" type="submit">Generate meme</button>
+        </form>
+      </section>
+      <section id="submit-section">
+        <form></form>
+      </section>
+    </main>
+    <footer>© SBJK</footer>
+    <script src="index.js"></script>
+  </body>
+</html>

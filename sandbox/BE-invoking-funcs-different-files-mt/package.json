@@ -1,0 +1,15 @@
+{
+  "name": "be-seeding-morning-task",
+  "version": "1.0.0",
+  "main": "getMessage.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

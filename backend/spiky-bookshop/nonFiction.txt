@@ -1,0 +1,8 @@
+You are now connected to database "bookshop" as user "joelkram".
+SELECT * FROM books
+WHERE price < 6
+AND is_fiction = FALSE;
+ book_id | title | price | quantity_in_stock | release_date | is_fiction 
+---------+-------+-------+-------------------+--------------+------------
+(0 rows)
+

@@ -1,0 +1,12 @@
+You are now connected to database "bookshop" as user "joelkram".
+ book_id |             title             | quantity_in_stock 
+---------+-------------------------------+-------------------
+       1 | Emma                          |               390
+       2 | Nineteen Eighty-Four: A Novel |               420
+       3 | The Handmaid's Tale           |                10
+       4 | The War of the Worlds         |                17
+       5 | Captain Corelli's Mandolin    |                 0
+       6 | A Brief History of Time       |                 0
+       7 | Pride and Prejudice           |                 4
+(7 rows)
+

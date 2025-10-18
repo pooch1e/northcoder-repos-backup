@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  userId           String   @id @default(uuid()) @map("id")
+  email            String   @unique
+  userName         String
+  avatar           String?
+  highScore        Int      @default(0)
+  quizzBuckTotal   Int      @default(0)
+  questionsCorrect Int      @default(0)
+  createdAt        DateTime @default(now())
+  games            Game[]
+
+  @@map("users")
+}
+
+model Countries {
+  userId     Int    @id @map("id")
+  name       String
+  flagUrl    String
+  capital    String
+  currency   String
+  population Int
+
+  @@map("countries")
+}
+
+model Game {
+  id        String   @id @default(uuid())
+  score     Int
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [userId], onDelete: Cascade)
+
+  @@map("games")
+}

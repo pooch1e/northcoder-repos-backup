@@ -1,0 +1,28 @@
+{
+  "name": "fun-data-katas",
+  "version": "1.0.0",
+  "description": "Instructions for this sprint can be found here:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pooch1e/fun-data-katas.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pooch1e/fun-data-katas/issues"
+  },
+  "homepage": "https://github.com/pooch1e/fun-data-katas#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "pg": "^8.16.0"
+  }
+}

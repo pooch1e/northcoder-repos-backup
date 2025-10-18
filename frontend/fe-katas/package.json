@@ -1,0 +1,25 @@
+{
+  "name": "fe-b4-katas",
+  "version": "1.0.0",
+  "description": "katas",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northcoders/CORE-B1-katas.git"
+  },
+  "author": "Northcoders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/northcoders/CORE-B1-katas/issues"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "homepage": "https://github.com/northcoders/CORE-B1-katas#readme",
+  "dependencies": {
+    "csv-parser": "^3.2.0"
+  }
+}

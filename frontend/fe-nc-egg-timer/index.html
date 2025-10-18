@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>NC Egg Timer</title>
+  </head>
+  <body>
+    <header>
+      <h1>NC Egg Timer</h1>
+      <p>
+        Welcome to NC Egg Timer. A very eggcellent app for all of your timing
+        needs.
+      </p>
+    </header>
+    <main>
+      <section id="timer-controls">
+        <h2>Timer Controls</h2>
+        <span id='time-remaining'><p>Time remaining: 0s</p></span>
+        <button type="button" class="timer-control-button">+5s</button>
+        <button type="button" class="timer-control-button">+30s</button>
+        <button type="button" class="timer-control-button">+1m</button>
+        
+        <button type="button" id="start-button" class="timer-control-button">Start</button>
+        <button type="button" id="reset-button" class="timer-control-button hide">Reset</button>
+      </section>
+      <section id="instructions">
+        <h2>Instructions</h2>
+        <p>
+          To set the time, increment the timer using the +30s button, then start
+          the timer by pressing the Start button.
+        </p>
+        <p>The follow times are suggested for a large egg:</p>
+        <ul class="instructions-list">
+          <li><span class="egg-type">Soft-boiled:</span> 240 seconds</li>
+          <li><span class="egg-type">Medium-boiled:</span> 360 seconds</li>
+          <li><span class="egg-type">Hard-boiled:</span> 540 seconds</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <img src="images/timer.png" alt="hourglass with sand pouring down" />
+      <p>© 2025 Timer App. All rights reserved.</p>
+    </footer>
+    <script src="./script.js" type="text/javascript""></script>
+  </body>
+</html>

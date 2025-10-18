@@ -1,0 +1,2 @@
+g2 = require('???');
+// const string3 = require('???');

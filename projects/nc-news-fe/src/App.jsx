@@ -1,0 +1,33 @@
+import './App.css';
+import { IdTypeProvider } from './context/idTypeContext';
+import { RefreshProvider } from './context/refreshProvider';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './components/layout/Layout';
+import { Header } from './components/layout/Header';
+import { PageNotFound } from './components/layout/PageNotFound';
+import { Article } from '../src/components/features/articles/Article';
+
+import { TopicPage } from './components/features/topics/TopicPage';
+import { UserProvider } from './context/userContext';
+
+function App() {
+  return (
+    <>
+      <RefreshProvider>
+        <UserProvider>
+          <IdTypeProvider>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Layout />} />
+              <Route path="/articles/:article_id" element={<Article />} />
+              <Route path="/topics/:topic_slug" element={<TopicPage />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </IdTypeProvider>
+        </UserProvider>
+      </RefreshProvider>
+    </>
+  );
+}
+
+export default App;

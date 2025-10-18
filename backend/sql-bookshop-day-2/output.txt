@@ -1,0 +1,41 @@
+You are now connected to database "my_bookshop" as user "joelkram".
+                title                 | average_score 
+--------------------------------------+---------------
+ The Hitchhiker's Guide to the Galaxy |           4.3
+(1 row)
+
+ lowest_rating | highest_rating |                title                 
+---------------+----------------+--------------------------------------
+           4.8 |            4.8 | Pride and Prejudice
+           1.1 |            4.9 | The Little Prince
+           4.7 |            4.7 | Nineteen Eighty-Four: A Novel
+           4.1 |            4.1 | Captain Corelli's Mandolin
+           3.8 |            4.8 | The Hitchhiker's Guide to the Galaxy
+           4.3 |            4.3 | The War of the Worlds
+           4.6 |            4.6 | The Handmaid's Tale
+           4.4 |            4.4 | A Brief History of Time
+           4.2 |            4.2 | Emma
+             3 |            4.5 | The Tale of Peter Rabbit
+(10 rows)
+
+ lowest_rating | highest_rating |                title                 
+---------------+----------------+--------------------------------------
+           3.8 |            4.8 | The Hitchhiker's Guide to the Galaxy
+(1 row)
+
+                title                 | average_score 
+--------------------------------------+---------------
+ Pride and Prejudice                  |           4.8
+ Nineteen Eighty-Four: A Novel        |           4.7
+ The Hitchhiker's Guide to the Galaxy |           4.3
+ The War of the Worlds                |           4.3
+ The Handmaid's Tale                  |           4.6
+ A Brief History of Time              |           4.4
+(6 rows)
+
+ user_id | rating |       title       
+---------+--------+-------------------
+       1 |    1.1 | The Little Prince
+       1 |    4.9 | The Little Prince
+(2 rows)
+

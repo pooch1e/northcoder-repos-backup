@@ -1,0 +1,8 @@
+You are now connected to database "bookshop" as user "joelkram".
+ book_id |         title         | price | quantity_in_stock | release_date | is_fiction 
+---------+-----------------------+-------+-------------------+--------------+------------
+       1 | Emma                  |  5.22 |               390 | 1815-12-23   | t
+       4 | The War of the Worlds |  2.50 |                17 | 1897-04-01   | t
+       7 | Pride and Prejudice   |  6.99 |                 4 | 1813-01-28   | t
+(3 rows)
+

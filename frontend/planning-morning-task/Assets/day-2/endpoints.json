@@ -1,0 +1,59 @@
+{
+    "GET /api": {
+        "description": "serves up a json representation of all the available endpoints of the api"
+      },
+    "GET /api/lamps": {
+        "description": "serves an array of all lamps",
+        "queries": [],
+        "exampleResponse": {
+          "lamps": [
+            {
+                "id": 1,
+                "name": "Living Room Lamp",
+                "img-url": "https://picsum.photos/200/300"
+            },
+            {
+                "id": 2,
+                "name": "Bedside Lamp",
+                "img-url": "https://picsum.photos/200/300"
+            }
+          ]
+        }
+      },
+    "GET /api/lamps/:id": {
+        "description": "serves a more detailed lamp object with the provided id",
+        "queries": [],
+        "exampleResponse": {
+          "lamp": 
+            {
+                "id": 1,
+                "name": "Living Room Lamp",
+                "brightness": 80,
+                "colour": "dark red",
+                "img-url": "https://picsum.photos/200/300"
+            }
+        },
+    "POST /api/lamps": {
+        "description": "posts a lamp to the database",
+        "queries": [],
+        "requestBody": 
+            {    
+                "name": "Living Room Lamp",
+                "brightness": 80,
+                "colour": "dark red",
+                "img-url": "https://picsum.photos/200/300"
+            },
+        "exampleResponse": {
+          "lamp": 
+            {
+                "id": 1,
+                "name": "Living Room Lamp",
+                "brightness": 80,
+                "colour": "dark red",
+                "img-url": "https://picsum.photos/200/300"
+            }
+        }
+      }
+    }
+
+}

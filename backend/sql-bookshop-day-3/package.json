@@ -1,0 +1,31 @@
+{
+  "name": "bookshop-day-3",
+  "version": "1.0.0",
+  "description": "Instructions for this sprint can be found at https://l2c.northcoders.com/courses/be/sql-bookshop-part-three",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "setup-db": "psql -f db/setup/setup-db.sql",
+    "seed-dev": "psql -f db/setup/seed-dev.sql",
+    "seed-test": "psql -f db/setup/seed-test.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pooch1e/sql-bookshop-day-3.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pooch1e/sql-bookshop-day-3/issues"
+  },
+  "homepage": "https://github.com/pooch1e/sql-bookshop-day-3#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

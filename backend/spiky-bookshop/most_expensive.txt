@@ -1,0 +1,6 @@
+You are now connected to database "bookshop" as user "joelkram".
+ book_id |           title            | price | quantity_in_stock | release_date | is_fiction 
+---------+----------------------------+-------+-------------------+--------------+------------
+       5 | Captain Corelli's Mandolin |  9.99 |                 0 | 1995-08-29   | t
+(1 row)
+

@@ -1,0 +1,24 @@
+{
+  "name": "fun-katas",
+  "version": "1.0.0",
+  "description": "Please see instructions for this repo [here](https://l2c.northcoders.com/courses/fun/solo-katas).",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pooch1e/fun-katas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pooch1e/fun-katas/issues"
+  },
+  "homepage": "https://github.com/pooch1e/fun-katas#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

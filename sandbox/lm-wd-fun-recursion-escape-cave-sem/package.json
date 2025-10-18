@@ -1,0 +1,16 @@
+{
+  "name": "recursion",
+  "version": "1.0.0",
+  "description": "Refactor the `escapeCave` implementation to use recursion.",
+  "main": "escape-cave.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

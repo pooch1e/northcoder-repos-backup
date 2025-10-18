@@ -1,0 +1,103 @@
+html body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* PROFILE PICTURE */
+.img-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    border: 1px solid red;
+}
+
+.head-img {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+#profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; 
+
+}
+
+/* ABOUT ME */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid red;
+    height: 15vh;
+    padding: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+  height: 100%;             
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 5%;
+}
+
+.text-container {
+  border: 1px solid black;
+  padding: 1rem;
+  width: 80vw;              
+  max-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+
+}
+
+#id-card-list {
+    border: 1px solid red;
+    width: 50%;
+    justify-content: left;
+    padding: 0;
+    margin-right: 25%;
+}
+
+
+#id-card-details {
+    border: 1px solid red;
+    width: 50%;
+    justify-content: right;
+    padding: 0;
+    margin: 0;
+}
+#id-card-details > ul {
+    list-style: none;
+}
+
+/* ABOUT ME */
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid red;
+    height: 15vh; /* or adjust as needed */
+    padding: 2rem;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 5%;
+}
+

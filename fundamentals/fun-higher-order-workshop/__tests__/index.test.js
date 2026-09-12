@@ -125,23 +125,28 @@ describe('Higher Order Functions', () => {
     });
   });
 
-  describe('once', () => {
+  describe.only('once', () => {
     it('returns a function on first invocation', () => {
       expect(typeof once()).toBe('function');
     });
-    // it('returns a string', () => { //does not work at all
-    //   const expected = () => {
-    //     return console.log('I work once!')
-    //   }
-    //   const actual = once();
-    //   expect(actual()).toBe(expected);
-    // });
-    it('when passed a function with console log, it only logs once', () => {
-      const functionToPass = () => {
-        console.log('I work once!');
-        const actual = once(functionToPass);
-        expect(actual).toBe('I work once!');
-      };
+  
+    it('returns the result of the first call on every subsequent call', () => {
+      const spy = jest.fn(() => 'I work once!');
+      const onceFn = once(spy);
+  
+      expect(onceFn()).toBe('I work once!');
+      expect(onceFn()).toBe('I work once!'); // still the first result
+    });
+  
+    it('only invokes the passed-in function once', () => {
+      const spy = jest.fn(() => 'I work once!');
+      const onceFn = once(spy);
+  
+      onceFn();
+      onceFn();
+      onceFn();
+  
+      expect(spy).toHaveBeenCalledTimes(1);
     });
   });
 
@@ -281,7 +286,7 @@ describe('Higher Order Functions', () => {
         expect(index()).toBe(undefined);
       });
     });
-    describe.only('element', () => {
+    describe('element', () => {
       it('on first invocation will return a function', () => {
         const ele = element([], fromTo(0, 1));
         expect(typeof ele).toBe('function');

@@ -11,13 +11,11 @@ const queueProto = {
 
 function createQueue(maxSize) {
   // build your queue object inside this factory function
-  const obj = Object.create(queueProto);
-  obj.maxSize = maxSize;
-  obj.front = 0
-  obj.back = 0
-  obj.storage = {};
 
-  return obj;
+  // methods
+  return {
+    
+  }
 }
 
 module.exports = createQueue;

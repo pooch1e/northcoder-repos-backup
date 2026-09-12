@@ -49,18 +49,17 @@ function liftF(func) {
 }
 
 function once(takeAFuncArgument) {
-  //forget arguments for the moment just get the god damn console log
-  let called = false; //check to see if console log has been logged
-  function conLog() {
-    //function to do the console log
-    if (called === false) {
-      // if this is called, then variable goes to true
-      called = true;
-      return takeAFuncArgument(); //calls the function passed in (console log)
+  let hasBeenCalled = false;
+  let result;
+  return function (...args) {
+    if (!hasBeenCalled) {
+      hasBeenCalled = true;
+      result = takeAFuncArgument.apply(this, args)
     }
+    return result;
   }
-  return conLog; //calls the function I made above;
 }
+
 //takes a binary function as an argument eg function(x, y)
 //returns a unary function eg function(X)
 

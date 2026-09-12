@@ -125,7 +125,7 @@ describe('Higher Order Functions', () => {
     });
   });
 
-  describe.only('once', () => {
+  describe('once', () => {
     it('returns a function on first invocation', () => {
       expect(typeof once()).toBe('function');
     });
@@ -286,7 +286,7 @@ describe('Higher Order Functions', () => {
         expect(index()).toBe(undefined);
       });
     });
-    describe('element', () => {
+    describe.only('element', () => {
       it('on first invocation will return a function', () => {
         const ele = element([], fromTo(0, 1));
         expect(typeof ele).toBe('function');

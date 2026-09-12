@@ -146,12 +146,12 @@ function fromTo(start, end) {
 }
 
 function element(array, rangeFunc) {
-// implement a range function to output the elements at indexOf range
-let index = x; //first arg of range
-let range = rangeFunc() //each time should update?
-  return function output() {
-    return index++;
+  let currentArr = [];
+  return function () {
+    currentArr.push(array[rangeFunc()])
+    return currentArr[0];
   }
+  
 }
 
 function collect() {}

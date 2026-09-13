@@ -146,10 +146,12 @@ function fromTo(start, end) {
 }
 
 function element(array, rangeFunc) {
-  let currentArr = [];
-  return function () {
-    currentArr.push(array[rangeFunc()])
-    return currentArr[0];
+  let currentArr = Array.from(array.length).map((el) => {
+    array[el]
+  })
+   console.log(currentArr)
+  return function (...args) {
+    
   }
   
 }

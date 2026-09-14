@@ -145,19 +145,28 @@ function fromTo(start, end) {
   }
 }
 
-function element(array, rangeFunc) {
-  // let rangeCount = rangeFunc();
-  // console.log(rangeCount)
-  return function () {
-    // rangecount calls subsequent inside func works
-    for (let i = 0; i < array.length; i++) {
-      let rangeCount = rangeFunc();
-      console.log(rangeCount)
-      console.log(array[rangeCount])
-      return array[rangeCount]
-    }
-  }
+// function element(array, rangeFunc) {
+//   // let rangeCount = rangeFunc();
+//   // console.log(rangeCount)
+//   return function () {
+//     // rangecount calls subsequent inside func works
+//     let rangeCount;
+//     for (let i = 0; i < array.length; i++) {
+//       rangeCount = rangeFunc();
 
+//       console.log(rangeCount)
+//       console.log(array[rangeCount])
+//       return array[rangeCount]
+//     }
+//   }
+
+// } this works but not for third test
+
+// second try
+function element(array, rangeFunc) {
+  return function () {
+    
+  }
 }
 
 function collect() {}

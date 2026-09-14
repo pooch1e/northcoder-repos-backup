@@ -286,12 +286,12 @@ describe('Higher Order Functions', () => {
         expect(index()).toBe(undefined);
       });
     });
-    describe('element', () => {
+    describe.only('element', () => {
       it('on first invocation will return a function', () => {
         const ele = element([], fromTo(0, 1));
         expect(typeof ele).toBe('function');
       });
-      it.only('returns the element at the given index', () => {
+      it('returns the element at the given index', () => {
         const fbiAgents = ['Dale Cooper', 'Phillip Jeffries', 'Gordon Cole'];
         const ele = element(fbiAgents, fromTo(1, 4));
         expect(ele()).toBe('Phillip Jeffries');

@@ -146,14 +146,16 @@ function fromTo(start, end) {
 }
 
 function element(array, rangeFunc) {
-  let index;
-  if (!rangeFunc) {
-    index = 0;
-  }
-  let result;
-  return function (...args) {
-    // need to call rangefunc and save it in closure? 
-    index = rangeFunc()
+  // let rangeCount = rangeFunc();
+  // console.log(rangeCount)
+  return function () {
+    // rangecount calls subsequent inside func works
+    for (let i = 0; i < array.length; i++) {
+      let rangeCount = rangeFunc();
+      console.log(rangeCount)
+      console.log(array[rangeCount])
+      return array[rangeCount]
+    }
   }
 
 }

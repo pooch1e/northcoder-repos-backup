@@ -150,8 +150,10 @@ function element(array, rangeFunc) {
   if (!rangeFunc) {
     index = 0;
   }
+  let result;
   return function (...args) {
-    return array
+    // need to call rangefunc and save it in closure? 
+    index = rangeFunc()
   }
 
 }

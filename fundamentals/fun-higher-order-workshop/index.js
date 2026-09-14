@@ -146,14 +146,14 @@ function fromTo(start, end) {
 }
 
 function element(array, rangeFunc) {
-  let currentArr = Array.from(array.length).map((el) => {
-    array[el]
-  })
-   console.log(currentArr)
-  return function (...args) {
-    
+  let index;
+  if (!rangeFunc) {
+    index = 0;
   }
-  
+  return function (...args) {
+    return array
+  }
+
 }
 
 function collect() {}

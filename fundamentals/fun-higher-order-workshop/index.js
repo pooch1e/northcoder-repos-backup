@@ -161,7 +161,18 @@ function collect(generator, array) {
   }
 }
 
-function filter() {}
+function filter(generator, predicate) {
+  return function generatorFn() {
+    let gen = generator();
+    let pred = predicate(gen)
+    if (pred) {
+      return gen;
+    } else if (!pred) {
+      return undefined
+    }
+    return undefined
+  }
+}
 
 function concat() {}
 

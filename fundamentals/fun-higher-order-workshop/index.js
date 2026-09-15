@@ -153,7 +153,13 @@ function element(array, rangeFunc = fromTo(0, array.length)) {
 }
 
 
-function collect() {}
+function collect(generator, array) {
+  return function generatorFunc() {
+    let gen = generator()
+    array.push(gen)
+    return gen
+  }
+}
 
 function filter() {}
 

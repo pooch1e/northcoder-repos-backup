@@ -129,23 +129,23 @@ describe('Higher Order Functions', () => {
     it('returns a function on first invocation', () => {
       expect(typeof once()).toBe('function');
     });
-  
+
     it('returns the result of the first call on every subsequent call', () => {
       const spy = jest.fn(() => 'I work once!');
       const onceFn = once(spy);
-  
+
       expect(onceFn()).toBe('I work once!');
       expect(onceFn()).toBe('I work once!'); // still the first result
     });
-  
+
     it('only invokes the passed-in function once', () => {
       const spy = jest.fn(() => 'I work once!');
       const onceFn = once(spy);
-  
+
       onceFn();
       onceFn();
       onceFn();
-  
+
       expect(spy).toHaveBeenCalledTimes(1);
     });
   });

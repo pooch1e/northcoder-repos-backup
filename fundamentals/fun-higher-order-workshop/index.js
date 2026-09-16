@@ -185,14 +185,22 @@ function concat(genA, genB) {
     }
     firstDone = true;
     if (!genB) {
-      return 
+      return
     }
     return genB();
-    
+
   }
 }
 
-function fibonacciF() {}
+function fibonacciF(first, second) {
+  return function fib (n) {
+    if (n <= 1) {
+      return n
+    } else {
+      return fib(n-1) + fib(n-2)
+    }
+  }
+}
 
 function genSymF() {}
 

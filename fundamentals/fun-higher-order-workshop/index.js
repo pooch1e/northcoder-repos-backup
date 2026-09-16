@@ -174,7 +174,23 @@ function filter(generator, predicate) {
   }
 }
 
-function concat() {}
+function concat(genA, genB) {
+  let firstDone = false;
+  return function () {
+    if (!firstDone) {
+      const result = genA();
+      if (result !== undefined) {
+        return result
+      }
+    }
+    firstDone = true;
+    if (!genB) {
+      return 
+    }
+    return genB();
+    
+  }
+}
 
 function fibonacciF() {}
 

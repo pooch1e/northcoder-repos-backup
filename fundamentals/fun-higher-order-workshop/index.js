@@ -193,10 +193,17 @@ function concat(genA, genB) {
 }
 
 function fibonacciF(first, second) {
+  let firstCall = true;
+  let result;
+  let accum = 0;
   return function fib () {
-    if (first) {
-     return first
-   }
+    if (firstCall === true) {
+      result = first;
+      return result
+    }
+    firstCall = false;
+    accum += (first + second)
+    return accum
   }
 }
 
